@@ -23,7 +23,7 @@ void creat (list *l){
 bool cek(list l){
     return (l.head == NULL && l.tail == NULL);
 }
-
+//write first
 void addfirst(list *l, int nomor){
     newnode = new DataUser();
 
