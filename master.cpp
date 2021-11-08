@@ -37,6 +37,17 @@ void addfirst(list *l, int nomor){
         (*l).head = newnode;
     }
 }
+void addlast(list *l, int nomor){
+    newnode = new DataUser();
+    newnode->Nkp = nomor;
+    if (cek(*l)){
+        addfirst(&(*l), nomor);
+    } else {
+        (*l).tail->next = newnode;
+        newnode->prev = (*l).tail;
+        (*l).tail = newnode;
+    }
+}
 
 void print(list *l){
     cur = (*l).head;
