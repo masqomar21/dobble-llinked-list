@@ -37,6 +37,7 @@ void addfirst(list *l, int nomor){
         (*l).head = newnode;
     }
 }
+
 void addlast(list *l, int nomor){
     newnode = new DataUser();
     newnode->Nkp = nomor;
